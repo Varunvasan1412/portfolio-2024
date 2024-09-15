@@ -5,6 +5,7 @@ import { spring, useInView, useMotionValue, useSpring } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import Skills from "@/components/Skills";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -33,7 +34,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>CodeBucks | About Page</title>
+        <title>Varun | About Page</title>
         <meta name="description" content="any description" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
@@ -106,6 +107,7 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
