@@ -53,7 +53,7 @@ export default function Home() {
                   href="mailto:mr.varun1403@gmail.com"
                   target={"_blank"}
                   whileTap={{ scale: 0.99 }}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-2"
                 >
                   Contact
                 </motion.a>
