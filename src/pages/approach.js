@@ -4,6 +4,7 @@ import Head from "next/head";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/CanvasRevealEffect";
 import AnimatedText from "@/components/AnimatedText";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const approach = () => {
   return (
@@ -12,9 +13,13 @@ const approach = () => {
         <title>Varun | My Approach</title>
         <meta name="description" content="any description" />
       </Head>
-      <AnimatedText text="Strategize for success." className="mb-16 pt-16" />
-      <section className="w-full py-20">
-        <div className="my-20 flex flex-col minlg:flex-row items-center justify-center w-full gap-4">
+      <TransitionEffect />
+      <AnimatedText
+        text="Strategize for success."
+        className="mb-16 pt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+      />
+      <section className="w-full py-7">
+        <div className="my-20 flex flex-col minlg:flex-row items-center justify-center w-full gap-4 sm:gap-4">
           <Card
             title="Planning & Strategy"
             icon={<AceternityIcon />}
@@ -104,7 +109,7 @@ const Card = ({ title, icon, children, description }) => {
 const AceternityIcon = () => {
   return (
     <div>
-      <button className="relative inline-flex minlg:h-14 overflow-hidden rounded-full p-[3px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-[8px] focus:ring-offset-slate-50">
+      <button className="relative inline-flex minlg:h-14 overflow-hidden rounded-full p-[3px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-[8px] focus:ring-offset-slate-50 ">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-3  text-white backdrop-blur-3xl text-sm minlg:text-lg font-bold">
           Hover Me !
