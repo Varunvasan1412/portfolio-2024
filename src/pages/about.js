@@ -62,7 +62,7 @@ const about = () => {
 
               <p className="font-medium text-[16px] my-4">
                 I believe that design is about more than just making things look
-                pretty it's about solving problems and creating intuitive,
+                pretty it is about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
 
